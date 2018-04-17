@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Modules">
+    <listeners> 
+        <listener class-name="test.Listeners"/>
+          </listeners>
+   
+    <test name="Module 1,2,4">
+       <parameter name="URL" value="personalloan.com"/>
+         
+    <classes>
+      <class name="test.Epic1">
+          <methods>
+              <include name ="Epic1_TC1"/>
+          </methods>
+          
+          
+</class>
+      <class name="test.Epic2"/>
+      <class name ="test.Epic4"/>
+      
+    </classes>
+  </test> 
+<test name ="Module3">
+  <parameter name="URL" value="carloan.com"/>
+  <parameter name="APIKey/usrname" value="123456"/>
+       <classes>
+          <class name="test.Epic3"/>
+      </classes>
+  </test>
+</suite> 

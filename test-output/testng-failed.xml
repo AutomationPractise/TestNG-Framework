@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Modules]">
+  <test thread-count="5" name="Module1,2,3,4(failed)">
+    <classes>
+      <class name="test.Epic4">
+        <methods>
+          <include name="Epic4_TC1"/>
+        </methods>
+      </class> <!-- test.Epic4 -->
+      <class name="test.Epic1">
+        <methods>
+          <include name="lastexecution"/>
+          <include name="Epic1_TC1"/>
+          <include name="afSyite"/>
+        </methods>
+      </class> <!-- test.Epic1 -->
+      <class name="test.Epic3">
+        <methods>
+          <include name="Bfsuite"/>
+          <include name="beforeclas"/>
+          <include name="afteclas"/>
+          <include name="Epic3_TC1"/>
+          <include name="afterevery"/>
+          <include name="beforeevery"/>
+        </methods>
+      </class> <!-- test.Epic3 -->
+    </classes>
+  </test> <!-- Module1,2,3,4(failed) -->
+</suite> <!-- Failed suite [Modules] -->
